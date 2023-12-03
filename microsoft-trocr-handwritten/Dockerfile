@@ -5,15 +5,11 @@ FROM ${BASE_IMAGE}
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PYTHONIOENCODING=utf8
 
-
 WORKDIR /home
 
 RUN pip install -r requirements.txt
 
-
-
-
-COPY ./python_tesseract ./models
+COPY ./python_trocr ./models
 
 CMD ["tritonserver", "--model-repository=/models", "--log-verbose=2", "--strict-model-config=false", "--http-port=8000", "--grpc-port=8001", "--metrics-port=8002"]
 EXPOSE 8000
