@@ -22,7 +22,7 @@ class TritonPythonModel:
         if not os.path.exists("anuvaad_mr.traineddata"):
             urllib.request.urlretrieve("https://anuvaad-pubnet-weights.s3.amazonaws.com/anuvaad_mar.traineddata", "anuvaad_mr.traineddata")
         if not os.path.exists("anuvaad_ori.traineddata"):
-            urllib.request.urlretrieve("https://anuvaad-pubnet-weights.s3.amazonaws.com/anuvaad_or.traineddata", "anuvaad_or.traineddata")
+            urllib.request.urlretrieve("https://anuvaad-pubnet-weights.s3.amazonaws.com/anuvaad_ori.traineddata", "anuvaad_or.traineddata")
         #Direct tesseract models
         if not os.path.exists("anuvaad_en.traineddata"):
             urllib.request.urlretrieve("https://raw.githubusercontent.com/tesseract-ocr/tessdata_best/main/eng.traineddata", "anuvaad_en.traineddata")
