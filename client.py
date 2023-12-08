@@ -37,7 +37,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     #specify deployed model name here eg: python_trocr
     parser.add_argument(
-        "--model_name", default="python_tesseract"
+        "--model_name", default="ocr"
     )
     args = parser.parse_args()
     main(args.model_name)
