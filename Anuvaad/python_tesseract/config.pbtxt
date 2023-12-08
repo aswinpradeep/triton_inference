@@ -1,4 +1,4 @@
-name: "python_tesseract"
+name: "ocr"
 backend: "python"
 input [{
   name: "INPUT_IMAGE"
